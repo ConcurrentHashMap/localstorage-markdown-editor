@@ -1,0 +1,63 @@
+/**
+ * Custom CSS for the localstorage-markdown-editor for fitting large and small screen displays
+ *
+ * @author ConcurrentHashMap <ConcurrentHashMap@arcor.de>
+ * @license Licensed under MIT (https://github.com/ConcurrentHashMap/localstorage-markdown-editor/blob/master/LICENSE)
+ */
+#box {
+  display: block!important;
+  width: 45%;
+  float: left;
+}
+
+#raw-input, #raw-input.onfocus {
+  margin-left: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box; 
+  display: inline;
+  width: 100%;
+  resize: none;
+}
+
+#content {
+  width: 50%!important;
+  float: left!important;
+  margin-left: 30px!important;
+}
+
+/* Fix navbar issue (line-height is mistakenly inherited from strapdown) */
+.navbar {
+  line-height: 20px
+}
+
+.navbar .container {
+  margin-left: 10px 
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  #box {
+    width: 45%;
+  }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  #box {
+    width: 100%;
+  }
+  #raw-input {
+    margin-left: 0px;
+  }
+  #content {
+    width: auto!important;
+  }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>localstorage-markdown-editor - The Markdown editor for your local browser</title>
+  <meta name="description" content="Create, edit and preview Markdown documents online. Using HTML5 web storage, your data stays 100% locally in your browser - no signup or installation required." />
+  <link rel="stylesheet" type="text/css" href="localstorage-markdown-editor.css">
+</head>
+<body>
+
+  <div id="box">
+    <!-- Raw Markdown input -->
+<textarea id="raw-input">
+## Welcome to localstorage-markdown-editor!
+
+**localstorage-markdown-editor is the Markdown editor for your local browser.**
+
+ No signup or installation required. Using the new HTML5 web storage and [Strapdown.js](http://strapdownjs.com/), everything stays inside your local browser - 100% privacy for your data!
+
+#### Features
+* Edit and live preview inside the browser (offline Markdown rendering, no data will be transfered to any server!)
+* Uses HTML5 local storage (avoids going crazy when accidently closing the browser window!)
+* Download as Markdown and HTML
+* Synchronization for multiple windows
+
+#### Contributing
+* Fork me on GitHub
+* Make some mind-blowing feature changes
+* Send me a pull request
+
+#### License
+MIT
+</textarea>
+    <!--/Raw Markdown input -->
+  </div>
+
+  <!-- Parsed Markdown area -->
+  <xmp theme="cerulean" style="display: none;"></xmp>
+  <!--/Parsed Markdown area -->
+
+  <!-- GitHub badge -->
+  <a href="https://github.com/ConcurrentHashMap/localstorage-markdown-editor" class="visible-desktop"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000; margin: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  <!--/GitHub bagde -->
+
+  <script src="strapdown.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap-dropdown.js"></script>
+  <script src="localstorage-markdown-editor.js"></script>
+</body>
+</html>
