@@ -1,6 +1,6 @@
 /**
  * A browser based markdown editor with live preview, using localStorage to synchronize between different browser windows.
-
+ *
  * @author ConcurrentHashMap <ConcurrentHashMap@arcor.de>
  * @license Licensed under MIT (https://github.com/ConcurrentHashMap/localstorage-markdown-editor/blob/master/LICENSE)
  */
